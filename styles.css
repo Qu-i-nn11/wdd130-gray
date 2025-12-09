@@ -174,3 +174,74 @@ main {
         margin-top: 20px;
     }
 }
+
+#review-main-content {
+    padding: 30px 20px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#review-layout::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.review-column {
+    float: left;
+    width: 48%; 
+    margin-right: 4%;
+}
+
+.review-column:last-child {
+    margin-right: 0;
+}
+
+
+#review-form-container {
+    width: 95%; 
+    margin: 20px auto; 
+    padding: 20px;
+    background-color: white; 
+    border: 1px solid #d9773a;
+    border-radius: 5px;
+}
+
+#review-form-container input:not([type="submit"]),
+#review-form-container textarea,
+#review-form-container select {
+    width: 95%; 
+    padding: 8px;
+    margin: 5px auto 10px; 
+    border: 1px solid #3d6f92; 
+    border-radius: 4px;
+    display: block; 
+}
+
+#review-form-container p {
+    text-align: center;
+}
+
+#review-form-container input[type="submit"] {
+    display: block;
+    margin: 15px auto 0; 
+    background-color: #9a2622; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#review-placeholder-area {
+    display: flex;
+    height: 600px;
+    text-align: center;
+    color: #9a2622;
+    font-size: 1.5rem;
+    padding-top: 150px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    
+}

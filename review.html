@@ -20,48 +20,59 @@
         <a href="review.html"><b>Leave a review</b></a>
     </nav>
 
-    <div>
-        <h2>Leave a Review</h2>
+    <div id="review-main-content">
+        <h2>Leave a Review!!</h2>
+
+        <div id="review-layout">
         
-        <form action="/submit-review" method="POST">
-            
-            <p>
-                <label for="name">Your Name:</label><br>
-                <input type="text" id="name" name="name" required>
-            </p>
-            
-            <p>
-                <label for="rating">Rating (1 to 5):</label><br>
-                <input type="number" id="rating" name="rating" min="1" max="5" required>
-            </p>
+            <div class="review-column">
+                
+                <div id="review-form-container">
+                    <form action="/submit-review" method="POST">
+                        <p>
+                            <label for="name">Your Name:</label><br>
+                            <input type="text" id="name" name="name" required>
+                        </p>
+                        
+                        <p>
+                            <label for="rating">Rating (1 to 5):</label><br>
+                            <input type="number" id="rating" name="rating" min="1" max="5" required>
+                        </p>
+    
+                        <p>
+                            <label for="title">Review Title:</label><br>
+                            <input type="text" id="title" name="title" required>
+                        </p>
+                        
+                        <p>
+                            <label for="details">Your Review:</label><br>
+                            <textarea id="details" name="details" rows="6" cols="50" required></textarea>
+                        </p>
+    
+                        <p>
+                            <label for="ordertype">Order Type:</label><br>
+                            <select id="ordertype" name="ordertype">
+                                <option value="delivery">Delivery</option>
+                                <option value="pickup">Pickup</option>
+                                <option value="dine-in">Dine-in</option>
+                            </select>
+                        </p>
+    
+                        <p>
+                            <input type="submit" value="Submit Review">
+                        </p>
+                        
+                    </form>
+                </div>
+            </div>
 
-            <p>
-                <label for="title">Review Title:</label><br>
-                <input type="text" id="title" name="title" required>
-            </p>
-            
-            <p>
-                <label for="details">Your Review:</label><br>
-                <textarea id="details" name="details" rows="6" cols="50" required></textarea>
-            </p>
+            <div class="review-column">
+                <div id="review-placeholder-area">
+                    <img src="images/leaveareviewimage.jpeg" alt="Leave a review image" style="position: relative; top: -130px;" >
+                </div>
+            </div>
 
-            <p>
-                <label for="ordertype">Order Type:</label><br>
-                <select id="ordertype" name="ordertype">
-                    <option value="delivery">Delivery</option>
-                    <option value="pickup">Pickup</option>
-                    <option value="dine-in">Dine-in</option>
-                </select>
-            </p>
-
-            <p>
-                <input type="submit" value="Submit Review">
-            </p>
-            
-        </form>
-    </div>
-
-    <footer>
+        </div> </div> <footer>
         <p>Saucy Slices 2025. All Rights Reserved</p>
     </footer>
 </body>
